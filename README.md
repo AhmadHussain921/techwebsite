@@ -1,4 +1,4 @@
-# Project Name
+# ReDesign techilab website
 
 Welcome to the  Redesign Techilab website repository! 
 
