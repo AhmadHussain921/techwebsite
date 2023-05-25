@@ -2,7 +2,7 @@ import React from "react";
 import imgdetails from "../../assets/imgdetails.jpeg";
 import { Wrapper, Row, Col, useMediaQuery } from "../Layouts";
 import { PrimaryBtn } from "../Buttons";
-import { H1 } from "../Typography";
+import { H1,P } from "../Typography";
 const Details = (props) => {
   const isResponsive = useMediaQuery({
     query: "(max-width: 768px)",
@@ -41,14 +41,13 @@ const Details = (props) => {
               )}
             </Wrapper>
             {props.page === "home" && (
-              <Wrapper
+              <P
               size="16px"
               color="white"
               pt="20px"
               lh="1.5rem"
-              className={isResponsive && "text-center"}
-              textAlign="justify"
-              
+              className={isResponsive ? "text-justify":"text-justify"}
+
             >
                 Empowering businesses with transformative software solutions and
                 driving growth. Our agile teams, custom software, blockchain
@@ -59,7 +58,7 @@ const Details = (props) => {
                 scalable solutions. With a focus on agility and adaptability,
                 Techilab is committed to helping businesses thrive in today's
                 digital landscape and achieve remarkable results.
-              </Wrapper>
+              </P>
             )}
             {props.page === "services" && (
               <>
@@ -95,9 +94,9 @@ const Details = (props) => {
             </PrimaryBtn>
           </Col>
           <Col md={6}>
-            {props.page === "home" && (
+            {props.page === "home" &&  (
               <Wrapper
-                mt={isResponsive && "2rem"}
+                mt={isResponsive ? "2rem":"8rem"}
                 className="d-flex justify-content-end"
               >
                 <img src={imgdetails} alt="Image for tech" className="w-100 " />

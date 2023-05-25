@@ -1,4 +1,4 @@
-# ReDesign techilab website
+# ReDesign Techilab website
 
 Welcome to the  Redesign Techilab website repository! 
 
@@ -8,7 +8,7 @@ To get started with the project, follow these steps:
 
 1. Clone the repository to your local machine using the following command:
 
-```git clone https://github.com/techilab-pk/redesignTechilab.git```
+```git clone https://github.com/Techilab-pk/redesignTechilab.git```
 
 2. Navigate to the project's root directory:
 

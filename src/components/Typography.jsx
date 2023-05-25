@@ -133,6 +133,7 @@ const H6 = styled.h6`
   border-radius: ${(props) => (props.borderRadius ? props.borderRadius : "")};
 `;
 const P = styled.p`
+  font-family:sans-serif;
   font-style: normal;
   text-transform: ${(props) => (props.tt ? props.tt : "")};
   font-weight: ${(props) => (props.weight ? props.weight : "")};
