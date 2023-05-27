@@ -191,7 +191,11 @@ const Footer = () => {
               {ContactData.map((val, index) => {
                 return (
                   <>
-                    <div key={index} className="col-xl-4 col-md-4 mb-30">
+                        <div
+                      key={index}
+                      className="col-xl-4 col-md-4 mb-30"
+                      data-aos="fade-down"
+                    >
                       <Wrapper>
                         <i
                           style={{

@@ -214,7 +214,7 @@ const AboutTes = () => {
         <TestimonialStyle>
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 d-none d-lg-block">
+            <div className="col-lg-6 d-none d-lg-block" data-aos="fade-up">
                 <ol
                   className="carousel-indicators tabs"
                   style={{ marginRight: isResponsive && "25px" }}
@@ -239,6 +239,7 @@ const AboutTes = () => {
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center">
                 <div
+                  data-aos="fade-down"
                   id="carouselExampleIndicators"
                   data-interval="false"
                   className="carousel slide"

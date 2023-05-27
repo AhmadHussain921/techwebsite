@@ -32,7 +32,7 @@ const AboutSer = () => {
       <Wrapper bg="#000">
         <div className="container pt-5">
           <div className="d-flex justify-content-center">
-            <div className="mm">
+          <div className="mm" data-aos="fade-up">
               <Wrapper
                 color="#fff"
                 tt="capitalize"
@@ -63,7 +63,12 @@ const AboutSer = () => {
             {CardData.map((val, index) => {
               return (
                 <>
-                  <Col md={4} className="text-center mb-2 mt-2" key={index}>
+                     <Col
+                    md={4}
+                    className="text-center mb-2 mt-2"
+                    key={index}
+                    data-aos="flip-left"
+                  >
                     <Card>
                       <h2 className="text-white">What we do ?</h2>
                       <div className="icon-wrapper">
