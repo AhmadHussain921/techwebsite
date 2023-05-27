@@ -41,9 +41,9 @@ const HeroSection = () => {
                 loop={5}
                 cursor
                 cursorStyle="|"
-                typeSpeed={50}
-                deleteSpeed={5}
-                delaySpeed={400}
+                typeSpeed={90}
+                deleteSpeed={1}
+                delaySpeed={1500}
               />
             </Wrapper>
             <Wrapper

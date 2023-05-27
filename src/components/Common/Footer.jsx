@@ -240,7 +240,7 @@ const Footer = () => {
                       />
                     </a>
                   </div>
-                  <div className="footer-text">
+                  <div className="footer-text" data-aos="fade-down">
                     <P
                       mb="54px"
                       size="14px"
@@ -263,7 +263,7 @@ const Footer = () => {
                       {FooterSocialIcons.map((val, index) => {
                         return (
                           <>
-                            <SocialLi key={index}>
+                            <SocialLi key={index} data-aos="flip-left">
                               <SocialA href="#" style={{}}>
                                 <SocialI className={val}></SocialI>
                               </SocialA>
@@ -286,8 +286,8 @@ const Footer = () => {
                     {LinksData.map((val, index) => {
                       return (
                         <>
-                          <LI key={index}>
-                            <a href="#">{val}</a>
+                           <LI key={index} data-aos="flip-right">
+                            <a href="#a">{val}</a>
                           </LI>
                         </>
                       );
@@ -314,7 +314,7 @@ const Footer = () => {
                     </P>
                   </div>
                   <div className="subscribe-form position-relative overflow-hidden">
-                    <form action="#">
+                  <form action="#" data-aos="fade-up">
                       <EmailInput type="text" placeholder="Email Address" />
                       <SubmitBtn>
                         <i
@@ -339,7 +339,7 @@ const Footer = () => {
                 <div className="copyright-text">
                   <P m="0px" size="14px" color="#fff">
                     Copyright &copy; 2023, All Right Reserved{" "}
-                    <a style={{ color: "#16a092" }} href="#">
+                    <a style={{ color: "#16a092" }} href="#a">
                       tech
                     </a>
                   </P>

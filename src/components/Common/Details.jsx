@@ -101,7 +101,7 @@ const Details = (props) => {
           <Col md={6} data-aos="fade-left">
             {props.page === "home" &&  (
               <Wrapper
-                mt={isResponsive ? "2rem":"6rem"}
+                mt={isResponsive ? "2rem":"5rem"}
                 className="d-flex justify-content-end"
               >
                 <img src={imgdetails} alt="Image for tech" className="w-100 " />
