@@ -1,5 +1,5 @@
 import React from "react";
-import imgdetails from "../../assets/imgdetails.jpeg";
+import imgdetails from "../../assets/imgdetails.png";
 import { Wrapper, Row, Col, useMediaQuery } from "../Layouts";
 import { PrimaryBtn } from "../Buttons";
 import { H1,P } from "../Typography";
@@ -11,7 +11,7 @@ const Details = (props) => {
     <Wrapper style={{ background: "#000" }}>
       <Wrapper pt="5rem" className="container">
         <Row>
-          <Col md={6}>
+        <Col md={6} data-aos="fade-left">
             <H1
               ls="3px"
               className={`text-white fw-bold ${isResponsive && "text-center"}`}
@@ -46,6 +46,11 @@ const Details = (props) => {
               color="white"
               pt="20px"
               lh="1.5rem"
+              style={{
+                textJustify: "distribute-all-lines",
+                hyphens: "auto",
+                textAlign: "justify",
+              }}
               className={isResponsive ? "text-justify":"text-justify"}
 
             >
@@ -93,10 +98,10 @@ const Details = (props) => {
               </a>
             </PrimaryBtn>
           </Col>
-          <Col md={6}>
+          <Col md={6} data-aos="fade-left">
             {props.page === "home" &&  (
               <Wrapper
-                mt={isResponsive ? "2rem":"8rem"}
+                mt={isResponsive ? "2rem":"6rem"}
                 className="d-flex justify-content-end"
               >
                 <img src={imgdetails} alt="Image for tech" className="w-100 " />

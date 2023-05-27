@@ -26,9 +26,9 @@ const LetsTalk = () => {
         >
           Want to higher a dedicated developer ?
         </Wrapper>
-        <div className="d-flex justify-content-center mt-4 ">
+        <div className="d-flex justify-content-center mt-4 " data-aos="zoom-in">
           <LetTalkStyle className="py-2 px-3 rounded btn">
-            <a href="#">Let's Talk</a>
+          <a href="#talk">Let's Talk</a>
           </LetTalkStyle>
         </div>
       </Wrapper>

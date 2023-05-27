@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "../src/pages/Home";
 import Header from "./components/Common/Header";
 import Footer from "./components/Common/Footer";
@@ -8,7 +8,12 @@ import CareerPage from "./pages/CareerPage";
 import LetsTalkPage from "./pages/LetsTalkPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Wrapper } from "./components/Layouts";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const App = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
     <Wrapper>

@@ -51,7 +51,7 @@ const DeliveredSec = () => {
         {LogosData.map((val, index) => {
           return (
             <>
-              <div key={index} className="mb-3">
+              <div data-aos="flip-left" key={index} className="m-3">
                 <img src={val.src} alt="" className="w-25 mb-3" />
                 <H3>{val.title}</H3>
               </div>

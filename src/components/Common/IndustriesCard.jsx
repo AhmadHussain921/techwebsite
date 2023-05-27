@@ -36,12 +36,13 @@ const IndustriesCard = (props) => {
                       md={
                         isResponsive ? 12 : Math.floor(props.data.length / 12)
                       }
+                      data-aos="flip-left"
                     >
                       <ColIndus>
                         <img
                           src={val.src}
                           alt=""
-                          width={props.page == "career" ? "25%" : "50%"}
+                          width={props.page === "career" ? "25%" : "50%"}
                         />
                         <H6
                           size={props.page === "career" && "21px"}

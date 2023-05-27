@@ -51,8 +51,11 @@ const HeroSection = () => {
               className="services-hero fw-bold"
               style={{ color: "#16A092" }}
             >
+              <div data-aos="fade-up-right">
               Blockchain&nbsp; &nbsp;|&nbsp;&nbsp;Artificial intilligence&nbsp;&nbsp;|&nbsp;&nbsp;Data
               Science&nbsp;&nbsp;|&nbsp;&nbsp;Ecommerce&nbsp;&nbsp;|&nbsp;&nbsp;DevOps
+              </div>
+              
             </Wrapper>
           </Wrapper>
         </Wrapper>

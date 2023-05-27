@@ -10,13 +10,17 @@ const HugeSec = () => {
     <Wrapper bg="#eeeee4" className="pb-5">
       <Wrapper className="container">
         <H1
+          data-aos="fade-down-right"
           className={`text-black pt-5 display-4 fw-bold ${
             isResponsive && "text-center"
           }`}
         >
           Let's Tell Huge Stories Together
         </H1>
-        <Wrapper className="d-flex justify-content-center">
+        <Wrapper
+          className="d-flex justify-content-center"
+          data-aos="fade-down-left"
+        >
           <Wrapper
             width={isResponsive ? "470px" : "700px"}
             size={isResponsive && "16px"}
@@ -31,6 +35,7 @@ const HugeSec = () => {
           </Wrapper>
         </Wrapper>
         <PrimaryBtn
+         data-aos="zoom-in"
           pl="10px"
           pr="10px"
           pt="5px"
