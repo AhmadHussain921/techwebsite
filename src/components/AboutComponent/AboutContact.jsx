@@ -12,21 +12,22 @@ const AboutContact = () => {
             <div className="mm">
               <H4 color="#16a092" className="text-center" data-aos="fade-up">
                 {" "}
-                Let's Started
+                Let's Get Started
               </H4>
               <div
                 className="fs-1 about-heading text-white text-center"
                 data-aos="fade-up"
               >
-                Are you ready for a better,more <br /> productive business ?
+               Are you ready to take your business to new heights  <br /> of efficiency and productivity? <br /> 
               </div>
               <Wrapper
-                color="gray"
-                className="p-about pt-4 text-center"
-                data-aos="fade-up"
-              >
+                         color="#ffffff"
+                         size="20px"
+                         className="text-center p-about pt-4"
+
+>
                 Stop worrying about technology problems. Focus on your
-                business.Let us <br /> provide the support you deserve.
+                business.<br />  Let us provide the support you deserve.
               </Wrapper>
               <div
                 className="btn-start d-flex justify-content-center"
