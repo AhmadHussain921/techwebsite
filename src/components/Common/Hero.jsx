@@ -20,7 +20,7 @@ const Hero = (props) => {
         <Wrapper height="90vh" className="container d-flex align-items-center">
           <div className={`wrapper ${props.extra !== "" ? "pt-5" : "pt-1"}`}>
             <Wrapper
-              data-aos="fade-right"
+              
               color="white"
               size="25px"
               ls="3px"
@@ -29,7 +29,7 @@ const Hero = (props) => {
               {props.extra}
             </Wrapper>
             <Wrapper
-            data-aos="fade-up-right"
+            
               color="white"
               weight="bold"
               ls="3px"
@@ -40,7 +40,7 @@ const Hero = (props) => {
               {props.title}
             </Wrapper>
             <Wrapper
-            data-aos="fade-up-right"
+            data-aos="fade-right"
               width={isResponsive ? "310px" : "650px"}
               lHeight="24px"
               ml={isResponsive && "14px"}

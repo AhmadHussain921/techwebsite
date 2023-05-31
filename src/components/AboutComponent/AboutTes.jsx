@@ -217,7 +217,7 @@ const AboutTes = () => {
         <TestimonialStyle>
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 d-none d-lg-block" data-aos="fade-up">
+              <div className="col-lg-6 d-none d-lg-block" data-aos="fade-right">
                 <ol
                   className="carousel-indicators tabs"
                   style={{ marginRight: isResponsive && "25px" }}
@@ -242,15 +242,16 @@ const AboutTes = () => {
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center">
                 <div
-                  data-aos="fade-down"
+                 
                   id="carouselExampleIndicators"
                   data-interval="false"
                   className="carousel slide"
                   data-ride="carousel"
-                >
-                  <h1 className="text-white text-capitalize fs-1 ">
+                > <div  data-aos="fade-down">
+                  <h1 className="text-white text-capitalize fs-1" >
                     Whats Going At tech ?{" "}
                   </h1>
+                  </div>
                   <div className="points">
                     <ul style={{ paddingTop: "3rem" }}>
                       {PointsLIData.map((val, index) => {

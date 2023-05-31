@@ -194,7 +194,7 @@ const Footer = () => {
                     <div
                       key={index}
                       className="col-xl-4 col-md-4 mb-30"
-                      data-aos="fade-down"
+                     
                     >
                       <Wrapper>
                         <i
@@ -244,7 +244,7 @@ const Footer = () => {
                       />
                     </a>
                   </div>
-                  <div className="footer-text" data-aos="fade-down">
+                  <div className="footer-text">
                     <P
                       mb="54px"
                       size="14px"
@@ -290,7 +290,7 @@ const Footer = () => {
                     {LinksData.map((val, index) => {
                       return (
                         <>
-                          <LI key={index} data-aos="flip-right">
+                          <LI key={index} >
                             <a href="#a">{val}</a>
                           </LI>
                         </>

@@ -10,13 +10,13 @@ const AboutContact = () => {
         <div className="container pt-5">
           <div className="d-flex justify-content-center">
             <div className="mm">
-              <H4 color="#16a092" className="text-center" data-aos="fade-up">
+              <H4 color="#16a092" className="text-center" data-aos="fade-down">
                 {" "}
                 Let's Get Started
               </H4>
               <div
                 className="fs-1 about-heading text-white text-center"
-                data-aos="fade-up"
+                data-aos="fade-down"
               >
                Are you ready to take your business to new heights  <br /> of efficiency and productivity? <br /> 
               </div>
@@ -31,7 +31,7 @@ const AboutContact = () => {
               </Wrapper>
               <div
                 className="btn-start d-flex justify-content-center"
-                data-aos="zoom-in"
+           
               >
                 <Link>
                   <PrimaryBtn className="rounded btn text-white fs-5 fw-bold">

@@ -138,17 +138,20 @@ const CareerOpenings = () => {
   return (
     <Wrapper bg="#000">
       <div className="container">
+        <div data-aos="fade-down">
         <Wrapper
           pt="5rem"
           color="white"
           className="text-center display-4 fw-bold"
+          
         >
           Current Openings
         </Wrapper>
-        <Wrapper className="text-white text-center pt-3">
+       
+        <Wrapper color="#16a092" className="text-center pt-3">
           feel fulfilled.have fun.help us to shape the future
         </Wrapper>
-
+        </div>
         {/* vacnacy */}
 
         <Wrapper mt="5rem">
@@ -174,6 +177,7 @@ const CareerOpenings = () => {
                       >
                         <div className="d-md-flex align-items-center">
                           <Wrapper
+                          data-aos="zoom-in"
                             height={isResponsive ? "60px" : "58px"}
                             width={isResponsive ? "60px" : "88px"}
                             mr={!isResponsive && "50px"}
@@ -184,6 +188,7 @@ const CareerOpenings = () => {
                               src={val.src}
                               height="100%"
                               width="100%"
+                              alt=""
                               style={{ objectFit: "contain" }}
                             />
                           </Wrapper>
@@ -229,7 +234,7 @@ const CareerOpenings = () => {
                                 {val.feature}
                               </P>
                             </div>
-                            <CareerCardA href="#">
+                            <CareerCardA href="#" data-aos="fade-down-right">
                               <h2>{val.role}</h2>
                             </CareerCardA>
                           </div>
@@ -239,10 +244,13 @@ const CareerOpenings = () => {
                         pt={isResponsive && "20px"}
                         pl={isResponsive ? "0px" : "20px"}
                         bt={isResponsive && "1px solid #939c9b"}
+                        data-aos="zoom-out"
                       >
                         <li>{val.city}</li>
                         <li>{val.time}</li>
-                        <li>{val.apply}</li>
+                  
+                        <li >{val.apply}</li>
+                      
                       </CareerItemListStyle>
                     </CareerListStyle>
                   </>

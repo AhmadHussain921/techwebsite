@@ -89,25 +89,23 @@ const ContactUs = () => {
             </P>
             <form className="position-relative mt-2" action="">
             <InputStyle
-                data-aos="fade-up"
+                
                 type=""
                 placeholder="Your Name"
                 required
               />
               <InputStyle
-                data-aos="fade-up"
+                
                 type=""
                 placeholder="Your Email"
                 required
               />
               <InputStyle
-                data-aos="fade-up"
                 type=""
                 placeholder="write a subject"
                 required
               />
               <TextAreaStyle
-                data-aos="fade-up"
                 name=""
                 id=""
                 cols="30"

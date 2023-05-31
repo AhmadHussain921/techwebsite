@@ -29,7 +29,12 @@ const LetsTalkPage = () => {
   return (
     <>
       <Wrapper bg="black">
-        <Wrapper className="container" pt="10rem" mb="-4rem">
+      <Wrapper
+          className="container"
+          pt="10rem"
+          mb="-4rem"
+          data-aos="fade-down"
+        >
           <Wrapper
             width="100%"
             className="d-flex flex-column flex-wrap justify-content-center"

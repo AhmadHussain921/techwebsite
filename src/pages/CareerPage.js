@@ -50,7 +50,7 @@ const CareerPage = () => {
         page="about"
       />
       <Wrapper bg="#000">
-        <div className="container py-5">
+      <div className="container py-5" data-aos="fade-down">
           <div className="text-center text-white fs-1 text-capitalize fw-bold pt-5">
             Lets explore our capabilities together
           </div>

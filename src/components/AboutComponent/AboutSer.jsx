@@ -42,7 +42,7 @@ const AboutSer = () => {
       <Wrapper bg="#000">
         <div className="container pt-5">
           <div className="d-flex justify-content-center">
-            <div className="mm" data-aos="fade-up">
+            <div className="mm" data-aos="fade-down">
               <Wrapper
                 color="#fff"
                 tt="capitalize"

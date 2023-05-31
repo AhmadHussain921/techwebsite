@@ -11,7 +11,7 @@ const Details = (props) => {
     <Wrapper style={{ background: "#000" }} width="100%">
       <Wrapper pt="5rem" className="container">
         <Row className="align-items-center">
-          <Col md={6} data-aos="fade-left">
+          <Col md={6} >
             <H1
               size="26px"
               weight="100"
@@ -109,7 +109,7 @@ const Details = (props) => {
               </a>
             </PrimaryBtn>
           </Col>
-          <Col md={6} data-aos="fade-left">
+          <Col md={6} data-aos="flip-left">
             {props.page === "home" && (
               <Wrapper
                 mt={isResponsive ? "2rem" : "5rem"}
