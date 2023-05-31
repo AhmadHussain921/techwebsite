@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   src: url("../fonts/Gilroy-Black.ttf") format("truetype");
 }
 font-family: ${(props) =>
-  props.fontFamily ? props.fontFamily : "'Gilroy-Black', sans-serif"};
+  props.fontFamily ? props.fontFamily : "'Gilroy-Light', sans-serif"};
   font-style: normal;
   position: ${(props) => (props.position ? props.position : "")};
   background: ${(props) => (props.bg ? props.bg : "")};
@@ -43,7 +43,7 @@ const SpanWrapper = styled.span`
     src: url("../fonts/Gilroy-Black.ttf") format("truetype");
   }
   font-family: ${(props) =>
-    props.fontFamily ? props.fontFamily : "'Gilroy-Black', sans-serif"};
+    props.fontFamily ? props.fontFamily : "'Gilroy-Light', sans-serif"};
   font-family: ${(props) => (props.fontFamily ? props.fontFamily : "")};
   position: ${(props) => (props.position ? props.position : "")};
   background: ${(props) => (props.bg ? props.bg : "")};

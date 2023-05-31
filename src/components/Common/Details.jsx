@@ -13,24 +13,25 @@ const Details = (props) => {
         <Row className="align-items-center">
           <Col md={6} >
             <H1
-              size="26px"
-              weight="100"
-              ls="5px"
+               size="45px"
+               // weight="100"
+               // ls="5px"
               className={`text-white ${isResponsive && "text-center"}`}
             >
               {props.title}
             </H1>
             <Wrapper
               size="32px"
-              pt="15px"
+               // pt="5px"
               color="#16a092"
+              weight="600"
               className={isResponsive && "text-center"}
             >
               {props.page === "home" && (
                 <>
                   {" "}
                   Revolutionize your brand's presence - By{" "}
-                  <SpanWrapper weight="900">tech</SpanWrapper>
+                  <SpanWrapper weight="600">tech</SpanWrapper>
                 </>
               )}
               {props.page === "services" && (
@@ -45,17 +46,19 @@ const Details = (props) => {
               )}
             </Wrapper>
             {props.page === "home" && (
-              <P
-                size="16px"
+              <Wrapper
+              size="18px"
                 color="#bfcdd5"
-                pt="20px"
+                pt="10px"
                 lh="1.5rem"
                 style={{
                   textJustify: "distribute-all-lines",
                   hyphens: "auto",
                   textAlign: "justify",
                 }}
-                className={isResponsive ? "text-justify" : "text-justify"}
+                width="90%"
+                weight="300"
+                // fontFamily="Tinos, serif"
               >
                 Empowering businesses with transformative software solutions and
                 driving growth. Our agile teams, custom software, blockchain
@@ -66,7 +69,7 @@ const Details = (props) => {
                 scalable solutions. With a focus on agility and adaptability,
                 Techilab is committed to helping businesses thrive in today's
                 digital landscape and achieve remarkable results.
-              </P>
+              </Wrapper>
             )}
             {props.page === "services" && (
               <>
@@ -99,12 +102,14 @@ const Details = (props) => {
             )}
 
             <PrimaryBtn
+               pt="7px"
+               pb="7px"
               className={`btn ${
                 isResponsive &&
                 "d-flex flex-row w-100 justify-content-center mb-5"
               }`}
             >
-              <a href="#About" className="text-white text-decoration-none px-3">
+                <a href="#About" className="text-white text-decoration-none px-4">
                 {props.btnName}
               </a>
             </PrimaryBtn>

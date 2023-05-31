@@ -10,7 +10,7 @@ const HugeSec = () => {
     <Wrapper bg="#eeeee4" className="pb-5">
       <Wrapper className="container">
         <H1
-         size="32px"
+         size="45px"
           data-aos="fade-down"
           className={`text-black pt-5 display-4 fw-bold ${
             isResponsive && "text-center"
@@ -23,10 +23,8 @@ const HugeSec = () => {
           data-aos="fade-down"
         >
           <Wrapper
-            width={isResponsive ? "470px" : "700px"}
-            size={"16px"}
-            fontFamily="Tinos, serif"
-            // lHeight="24px"
+              width={isResponsive ? "470px" : "600px"}
+              size={"18px"}
             color="#151617"
             className={`pt-4 ${isResponsive && "text-center"}`}
           >
@@ -38,10 +36,10 @@ const HugeSec = () => {
         </Wrapper>
         <PrimaryBtn
          data-aos="zoom-in"
-         pl="25px"
-         pr="25px"
-          pt="5px"
-          pb="5px"
+         pl="30px"
+         pr="30px"
+         pt="7px"
+         pb="7px"
           width={isResponsive && "100%"}
           className={`btn mt-4 ${
             isResponsive &&

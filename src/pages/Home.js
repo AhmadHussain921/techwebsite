@@ -89,7 +89,7 @@ const Home = () => {
           >
             Industries we serves
           </Wrapper>
-          <H2 ls="2px" weight="100" className="text-white" size="32px">
+          <H2 ls="2px" weight="600" className="text-white" size="31px">
             Managed IT Services customized for your industry
           </H2>
         </Wrapper>

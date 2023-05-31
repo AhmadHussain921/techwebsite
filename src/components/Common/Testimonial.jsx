@@ -91,10 +91,10 @@ const Testimonial = () => {
                               <Wrapper size="18px" className="content">
                                 <P
                                   className="text-justify"
-                                  fontFamily="Tinos, serif"
+                                 // fontFamily="Tinos, serif"
                                   size="18px"
-                                  ls="1.5px"
-                                  lHeight="24px"
+                               // ls="1.5px"
+                               lHeight="26px"
                                 >
                                   <SpanWrapper
                                     color="#16a092"

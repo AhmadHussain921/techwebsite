@@ -41,7 +41,7 @@ const ServicesSec = (props) => {
                 </H2>
                 <div className="what d-flex justify-content-center mt-2">
                 <P
-                    size="16px"
+                    size="18px"
                     color="#bfcdd5"
                     className=" w-75 text-center"
                     lHeight="26px"
@@ -101,6 +101,11 @@ const ServicesSec = (props) => {
                             {val.title}
                           </H2>
                           <P
+                           style={{
+                            textJustify: "distribute-all-lines",
+                            hyphens: "auto",
+                            textAlign: "justify",
+                          }}
                             className="mt-4"
                             color="#bfcdd5"
                             weight="600"
@@ -148,9 +153,14 @@ const ServicesSec = (props) => {
                             {val.title}
                           </H3>
                           <P
-                              // className="text-white"
+                               className="text-center"
+                               style={{
+                                 textJustify: "distribute-all-lines",
+                                 hyphens: "auto",
+                                 textAlign: "justify",
+                               }}
                               color="#bfcdd5"
-                              size="15px"
+                              size="16px"
                               lHeight="24px"
                               ls="1px"
                           >

@@ -1,5 +1,5 @@
 import React from "react";
-import { useMediaQuery, Wrapper, SpanWrapper } from "../Layouts";
+import { useMediaQuery, Wrapper } from "../Layouts";
 import { Typewriter } from "react-simple-typewriter";
 import ParticlesBg from "./ParticlesBg/ParticlesBg";
 const HeroSection = () => {
@@ -18,7 +18,7 @@ const HeroSection = () => {
               className="mb-0 mt-0"
               color="white"
               ls="3px"
-              size={isResponsive ? "15px" : "17px"}
+              size={isResponsive ? "15px" : "18px"}
               pl={isResponsive && "1rem"}
             >
               We Build
@@ -26,7 +26,7 @@ const HeroSection = () => {
             <Wrapper
              fontFamily="Urbanist, sans-serif"
               color="white"
-              ls="3px"
+              weight="700"
               size={isResponsive ? "30px" : "51px"}
               pl={isResponsive && "1rem"}
               transition={isResponsive && "0.6s ease-in-out"}
@@ -50,10 +50,10 @@ const HeroSection = () => {
             <Wrapper
               ml={isResponsive && "1rem"}
               className="services-hero"
-              style={{ color: "#16A092" }}
             //  fontFamily={"'Gilroy-Bold', sans-serif"}
               weight="600"
-              size="17px"
+              color="#16A092"
+              size="18px"
               lHeight="27px"
               fontFamily="Urbanist, sans-serif"
             >
