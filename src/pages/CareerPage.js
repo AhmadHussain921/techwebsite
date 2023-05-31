@@ -12,30 +12,30 @@ const IndustriesCareerData = [
   {
     src: health,
     title: "Health care",
-    desc: "No-premium health, dental, and vision benefits, 401K, FSA",
+    desc: "Comprehensive healthcare coverage, prioritizing your well-being.",
   },
 
   {
     src: flexibility,
     title: "Flexibility",
-    desc: "No-premium health, dental, and vision benefits, 401K, FSA",
+    desc: "Embrace work-life balance with flexible schedules and remote options",
   },
   {
     src: lunch,
     title: "Lunch",
-    desc: "No-premium health, dental, and vision benefits, 401K, FSA",
+    desc: "Complimentary catered lunches for a nourishing workday",
   },
 
   {
     src: emoji,
     title: "Fun",
-    desc: "No-premium health, dental, and vision benefits, 401K, FSA",
+    desc: "Vibrant work environment with team activities, and fostering fun",
   },
 
   {
     src: riding,
     title: "Life style",
-    desc: "No-premium health, dental, and vision benefits, 401K, FSA",
+    desc: "Achieve work-life balance with supportive and flexible culture",
   },
 ];
 const CareerPage = () => {
@@ -45,7 +45,7 @@ const CareerPage = () => {
         bg="https://www.key.com/content/dam/kco/images/businesses-institutions/industry-expertise/advisor_homepage_cropped.jpg"
         title="Career At tech"
         extra=""
-        desc="We help companies reach their full potential. Are you ready to reach yours? Come join us.We help companies reach their full potential."
+        desc="Discover endless possibilities for growth and learning in the ever-evolving world of software development at Techilab."
         contact={false}
         page="about"
       />
@@ -55,8 +55,7 @@ const CareerPage = () => {
             Lets explore our capabilities together
           </div>
           <Wrapper color="#16a092" className="text-center pt-3">
-            The href attribute requires a valid value to be accessible. Provide
-            a valid.
+          Quality is at the core of everything we do, ensuring robust and reliable software solutions.
           </Wrapper>
         </div>
         <Wrapper

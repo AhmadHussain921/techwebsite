@@ -54,8 +54,8 @@ const IndustriesCard = (props) => {
                         {props.page === "career" && (
                           <>
                             <P size="14px">
-                              No-premium health, dental, and vision benefits,
-                              401K, FSA
+                              {val.desc}
+                              
                             </P>
                           </>
                         )}

@@ -149,7 +149,7 @@ const CareerOpenings = () => {
         </Wrapper>
        
         <Wrapper color="#16a092" className="text-center pt-3">
-          feel fulfilled.have fun.help us to shape the future
+        Discover your next career move at Techilab, where we are currently hiring talented professionals 
         </Wrapper>
         </div>
         {/* vacnacy */}
@@ -260,8 +260,7 @@ const CareerOpenings = () => {
           </div>
         </Wrapper>
         <div className="weneed text-white text-center fs-4 py-4">
-          we are always on the lookout for talented folk to join our team
-          .follow us on linkedin!
+        Join our team! Follow us on LinkedIn for career updates.
         </div>
       </div>
     </Wrapper>
