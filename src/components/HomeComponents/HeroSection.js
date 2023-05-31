@@ -14,19 +14,20 @@ const HeroSection = () => {
         <Wrapper height="90vh" className="container d-flex align-items-center">
           <Wrapper className="pt-5">
             <Wrapper
+               fontFamily="Arial, sans-serif"
               className="mb-0 mt-0"
               color="white"
               ls="3px"
-              size={isResponsive ? "15px" : "25px"}
+              size={isResponsive ? "15px" : "17px"}
               pl={isResponsive && "1rem"}
             >
               We Build
             </Wrapper>
             <Wrapper
+             fontFamily="Urbanist, sans-serif"
               color="white"
-              weight="bold"
               ls="3px"
-              size={isResponsive ? "30px" : "70px"}
+              size={isResponsive ? "30px" : "51px"}
               pl={isResponsive && "1rem"}
               transition={isResponsive && "0.6s ease-in-out"}
             >
@@ -48,8 +49,13 @@ const HeroSection = () => {
             </Wrapper>
             <Wrapper
               ml={isResponsive && "1rem"}
-              className="services-hero fw-bold"
+              className="services-hero"
               style={{ color: "#16A092" }}
+            //  fontFamily={"'Gilroy-Bold', sans-serif"}
+              weight="600"
+              size="17px"
+              lHeight="27px"
+              fontFamily="Urbanist, sans-serif"
             >
               <div data-aos="fade-up-right">
               Blockchain&nbsp; &nbsp;|&nbsp;&nbsp;Artificial intilligence&nbsp;&nbsp;|&nbsp;&nbsp;Data

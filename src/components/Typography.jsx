@@ -1,6 +1,12 @@
 //typography
 import styled from "styled-components";
 const H1 = styled.h1`
+@font-face {
+  font-family: "Gilroy-Black.eot";
+  src: url("../fonts/Gilroy-Black.ttf") format("truetype");
+}
+font-family: ${(props) =>
+  props.fontFamily ? props.fontFamily : "'Gilroy-Black', sans-serif"};
   font-style: normal;
   text-transform: ${(props) => (props.tt ? props.tt : "")};
   font-weight: ${(props) => (props.weight ? props.weight : "")};
@@ -24,6 +30,12 @@ const H1 = styled.h1`
 `;
 const H2 = styled.h2`
   font-style: normal;
+  @font-face {
+    font-family: "Gilroy-Black.eot";
+    src: url("../fonts/Gilroy-Black.ttf") format("truetype");
+  }
+  font-family: ${(props) =>
+    props.fontFamily ? props.fontFamily : "'Gilroy-Black', sans-serif"};
   text-transform: ${(props) => (props.tt ? props.tt : "")};
   font-weight: ${(props) => (props.weight ? props.weight : "")};
   line-height: ${(props) => (props.lHeight ? props.lHeight : "")};
@@ -46,6 +58,12 @@ const H2 = styled.h2`
 `;
 const H3 = styled.h3`
   font-style: normal;
+  @font-face {
+    font-family: "Gilroy-Black.eot";
+    src: url("../fonts/Gilroy-Black.ttf") format("truetype");
+  }
+  font-family: ${(props) =>
+    props.fontFamily ? props.fontFamily : "'Gilroy-Black', sans-serif"};
   text-transform: ${(props) => (props.tt ? props.tt : "")};
   font-weight: ${(props) => (props.weight ? props.weight : "")};
   line-height: ${(props) => (props.lHeight ? props.lHeight : "")};
@@ -67,7 +85,13 @@ const H3 = styled.h3`
   border-radius: ${(props) => (props.borderRadius ? props.borderRadius : "")};
 `;
 const H4 = styled.h4`
-  font-style: normal;
+  font-style: normal; 
+   @font-face {
+    font-family: "Gilroy-Black.eot";
+    src: url("../fonts/Gilroy-Black.ttf") format("truetype");
+  }
+  font-family: ${(props) =>
+    props.fontFamily ? props.fontFamily : "'Gilroy-Black', sans-serif"};
   text-transform: ${(props) => (props.tt ? props.tt : "")};
   font-weight: ${(props) => (props.weight ? props.weight : "")};
   line-height: ${(props) => (props.lHeight ? props.lHeight : "")};
@@ -90,6 +114,12 @@ const H4 = styled.h4`
 `;
 const H5 = styled.h5`
   font-style: normal;
+  @font-face {
+    font-family: "Gilroy-Black.eot";
+    src: url("../fonts/Gilroy-Black.ttf") format("truetype");
+  }
+  font-family: ${(props) =>
+    props.fontFamily ? props.fontFamily : "'Gilroy-Black', sans-serif"};
   text-transform: ${(props) => (props.tt ? props.tt : "")};
   font-weight: ${(props) => (props.weight ? props.weight : "")};
   line-height: ${(props) => (props.lHeight ? props.lHeight : "")};
@@ -112,6 +142,12 @@ const H5 = styled.h5`
 `;
 const H6 = styled.h6`
   font-style: normal;
+  @font-face {
+    font-family: "Gilroy-Black.eot";
+    src: url("../fonts/Gilroy-Black.ttf") format("truetype");
+  }
+  font-family: ${(props) =>
+    props.fontFamily ? props.fontFamily : "'Gilroy-Black', sans-serif"};
   text-transform: ${(props) => (props.tt ? props.tt : "")};
   font-weight: ${(props) => (props.weight ? props.weight : "")};
   line-height: ${(props) => (props.lHeight ? props.lHeight : "")};
@@ -133,8 +169,13 @@ const H6 = styled.h6`
   border-radius: ${(props) => (props.borderRadius ? props.borderRadius : "")};
 `;
 const P = styled.p`
-  font-family:sans-serif;
   font-style: normal;
+  @font-face {
+    font-family: "Gilroy-Black.eot";
+    src: url("../fonts/Gilroy-Black.ttf") format("truetype");
+  }
+  font-family: ${(props) =>
+  props.fontFamily ? props.fontFamily : "Tinos, serif"};
   text-transform: ${(props) => (props.tt ? props.tt : "")};
   font-weight: ${(props) => (props.weight ? props.weight : "")};
   line-height: ${(props) => (props.lHeight ? props.lHeight : "24px")};

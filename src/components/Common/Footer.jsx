@@ -127,8 +127,8 @@ const EmailInput = styled.input`
   padding: 14px 28px;
   background: #2e2e2e;
   border: 1px solid #2e2e2e;
-  
-  margin-bottom:20px;
+
+  margin-bottom: 20px;
 `;
 const H3Extra = styled(H3)`
   color: #fff;
@@ -191,7 +191,7 @@ const Footer = () => {
               {ContactData.map((val, index) => {
                 return (
                   <>
-                        <div
+                    <div
                       key={index}
                       className="col-xl-4 col-md-4 mb-30"
                       data-aos="fade-down"
@@ -290,7 +290,7 @@ const Footer = () => {
                     {LinksData.map((val, index) => {
                       return (
                         <>
-                           <LI key={index} data-aos="flip-right">
+                          <LI key={index} data-aos="flip-right">
                             <a href="#a">{val}</a>
                           </LI>
                         </>
@@ -313,12 +313,13 @@ const Footer = () => {
                       color="#ffffff"
                       lHeight="21px"
                       ls="1px"
+                      className="text-white"
                     >
                       Don’t miss to subscribe to our new feeds, Reach us!
                     </P>
                   </div>
                   <div className="subscribe-form position-relative overflow-hidden">
-                  <form action="#" data-aos="fade-up">
+                    <form action="#" data-aos="fade-up">
                       <EmailInput type="text" placeholder="Email Address" />
                       <SubmitBtn>
                         <i

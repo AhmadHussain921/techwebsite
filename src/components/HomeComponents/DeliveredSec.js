@@ -52,8 +52,10 @@ const DeliveredSec = () => {
           return (
             <>
               <div data-aos="flip-left" key={index} className="m-3">
-                <img src={val.src} alt="" className="w-25 mb-3" />
-                <H3>{val.title}</H3>
+              <img src={val.src} alt="" style={{ width: "63px" }} />
+              <H3 className="pt-3" color="#bfcdd5" size="21px" weight="600">
+                  {val.title}
+                </H3>
               </div>
             </>
           );

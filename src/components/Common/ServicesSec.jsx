@@ -27,14 +27,25 @@ const ServicesSec = (props) => {
               <Wrapper
                 data-aos="fade-down"
                 width="100%"
-                className="d-flex flex-wrap justify-content-center pb-5"
+                className="d-flex flex-column flex-wrap justify-content-center pb-5"
               >
-                <H2 ls="3vpx" className="text-center text-white fw-bold fs-1 ">
+                  <H2
+                  size="45px"
+                  ls="3vpx"
+                  weight="600"
+                  // color="#16a092"
+                  className="text-center text-white fs-1 "
+                >
                   {" "}
                   What we do ?
                 </H2>
-                <div className="what d-flex justify-content-center mt-4">
-                  <P size="17px" color="white" className=" w-75 text-center">
+                <div className="what d-flex justify-content-center mt-2">
+                <P
+                    size="16px"
+                    color="#bfcdd5"
+                    className=" w-75 text-center"
+                    lHeight="26px"
+                  >
                     We collaborate closely with clients, combining industry best
                     practices and advanced technologies to deliver exceptional,
                     scalable, and cost-effective results. 
@@ -80,7 +91,7 @@ const ServicesSec = (props) => {
                       {props.page === "contact" ? (
                         <>
                           <H2
-                            size="26px"
+                            size="24px"
                             weight="600"
                             color="white"
                             margin="1rem 0"
@@ -91,9 +102,9 @@ const ServicesSec = (props) => {
                           </H2>
                           <P
                             className="mt-4"
-                            color="white"
+                            color="#bfcdd5"
                             weight="600"
-                            size="15px"
+                            size="12px"
                             lHeight="1.6"
                             ls="0.03em"
                           >
@@ -127,21 +138,21 @@ const ServicesSec = (props) => {
                             />
                           </div>
                           <H3
-                            size="20px"
+                            size="26px"
                             weight="600"
                             color="white"
                             margin="1rem 0"
-                            ls="3px"
-                            className="text-white"
+                            lHeight="34px"
+                            className="text-white pt-3"
                           >
                             {val.title}
                           </H3>
                           <P
-                            className="text-white"
-                            color="white"
-                            size="15px"
-                            lHeight="1.6"
-                            ls="0.03em"
+                              // className="text-white"
+                              color="#bfcdd5"
+                              size="15px"
+                              lHeight="24px"
+                              ls="1px"
                           >
                             {val.desc}
                           </P>

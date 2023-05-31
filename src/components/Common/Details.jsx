@@ -1,6 +1,6 @@
 import React from "react";
 import imgdetails from "../../assets/imgdetails.png";
-import { Wrapper, Row, Col, useMediaQuery } from "../Layouts";
+import { Wrapper, Row, Col, SpanWrapper, useMediaQuery } from "../Layouts";
 import { PrimaryBtn } from "../Buttons";
 import { H1, P } from "../Typography";
 const Details = (props) => {
@@ -8,18 +8,20 @@ const Details = (props) => {
     query: "(max-width: 768px)",
   });
   return (
-    <Wrapper style={{ background: "#000" }}>
+    <Wrapper style={{ background: "#000" }} width="100%">
       <Wrapper pt="5rem" className="container">
-        <Row>
+        <Row className="align-items-center">
           <Col md={6} data-aos="fade-left">
             <H1
-              ls="3px"
-              className={`text-white fw-bold ${isResponsive && "text-center"}`}
+              size="26px"
+              weight="100"
+              ls="5px"
+              className={`text-white ${isResponsive && "text-center"}`}
             >
               {props.title}
             </H1>
             <Wrapper
-              size="22px"
+              size="32px"
               pt="15px"
               color="#16a092"
               className={isResponsive && "text-center"}
@@ -28,14 +30,16 @@ const Details = (props) => {
                 <>
                   {" "}
                   Revolutionize your brand's presence - By{" "}
-                  <span className="fw-bold">Tech</span>
+                  <SpanWrapper weight="900">tech</SpanWrapper>
                 </>
               )}
               {props.page === "services" && (
                 <>
                   <span className="fw-bold">
-                    Web applications , cross-platform applications , Decentralized Applications (DApps) , Artificial Intelligence (AI) and Machine Learning (ML) Solutions , and more.
-                    &nbsp; &nbsp;|&nbsp;&nbsp; Since 2017
+                    Web applications , cross-platform applications ,
+                    Decentralized Applications (DApps) , Artificial Intelligence
+                    (AI) and Machine Learning (ML) Solutions , and more. &nbsp;
+                    &nbsp;|&nbsp;&nbsp; Since 2017
                   </span>
                 </>
               )}
@@ -43,7 +47,7 @@ const Details = (props) => {
             {props.page === "home" && (
               <P
                 size="16px"
-                color="white"
+                color="#bfcdd5"
                 pt="20px"
                 lh="1.5rem"
                 style={{
@@ -67,8 +71,10 @@ const Details = (props) => {
             {props.page === "services" && (
               <>
                 <Wrapper
-                  color="white"
+                  color="#bfcdd5"
+                  fontFamily="Tinos, serif"
                   lHeight="35px"
+                  size="16px"
                   className={`mt-4 ${isResponsive && "ms-4"}`}
                 >
                   <li>Drive innovation and stay ahead in your industry. </li>
@@ -98,7 +104,7 @@ const Details = (props) => {
                 "d-flex flex-row w-100 justify-content-center mb-5"
               }`}
             >
-              <a href="#About" className="text-white text-decoration-none">
+              <a href="#About" className="text-white text-decoration-none px-3">
                 {props.btnName}
               </a>
             </PrimaryBtn>
@@ -121,13 +127,15 @@ const Details = (props) => {
                   <h1 className="text-center display-5 fw-bold text-white">
                     GROW YOUR BUSSINESS
                   </h1>
-                  <P
+
+                  <Wrapper
+                    fontFamily="Tinos, serif"
+                    className="text-center text-white"
                     style={{
                       textJustify: "distribute-all-lines",
                       hyphens: "auto",
                       textAlign: "justify",
                     }}
-                    className="text-center text-white"
                   >
                     Don't let your competitors surge ahead while you lag behind.
                     It's time to seize the opportunity to expand your horizons,
@@ -136,7 +144,7 @@ const Details = (props) => {
                     equip you with the tools you need to outperform the
                     competition, unlock new avenues of growth, and transform
                     your business into an unstoppable force.
-                  </P>
+                  </Wrapper>
                 </div>
               </Wrapper>
             )}

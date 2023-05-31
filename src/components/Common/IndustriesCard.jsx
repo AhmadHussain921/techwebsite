@@ -42,11 +42,12 @@ const IndustriesCard = (props) => {
                         <img
                           src={val.src}
                           alt=""
-                          width={props.page === "career" ? "25%" : "50%"}
+                          width={props.page === "career" ? "25%" : "30%"}
                         />
                         <H6
                           size={props.page === "career" && "21px"}
                           className="mt-3"
+                          weight="600"
                         >
                           {val.title}
                         </H6>

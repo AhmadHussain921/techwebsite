@@ -10,6 +10,7 @@ const HugeSec = () => {
     <Wrapper bg="#eeeee4" className="pb-5">
       <Wrapper className="container">
         <H1
+         size="32px"
           data-aos="fade-down-right"
           className={`text-black pt-5 display-4 fw-bold ${
             isResponsive && "text-center"
@@ -23,10 +24,11 @@ const HugeSec = () => {
         >
           <Wrapper
             width={isResponsive ? "470px" : "700px"}
-            size={isResponsive && "16px"}
-            className={`text-black fw-bold pt-3 ${
-              isResponsive && "text-center"
-            }`}
+            size={"16px"}
+            fontFamily="Tinos, serif"
+            // lHeight="24px"
+            color="#bfcdd5"
+            className={`pt-4 ${isResponsive && "text-center"}`}
           >
             Our team is wired up to deliver fully customized software solutions,
             fueled by passion, expertise, and creativity. Let's turn your vision
@@ -36,8 +38,8 @@ const HugeSec = () => {
         </Wrapper>
         <PrimaryBtn
          data-aos="zoom-in"
-          pl="10px"
-          pr="10px"
+         pl="25px"
+         pr="25px"
           pt="5px"
           pb="5px"
           width={isResponsive && "100%"}

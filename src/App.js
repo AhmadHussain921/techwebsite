@@ -7,22 +7,32 @@ import ServicesPage from "./pages/ServicesPage";
 import CareerPage from "./pages/CareerPage";
 import LetsTalkPage from "./pages/LetsTalkPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Wrapper } from "./components/Layouts";
+import { Wrapper, useMediaQuery } from "./components/Layouts";
 import Aos from "aos";
+import styled from "styled-components";
 import "aos/dist/aos.css";
+const ResponsiveOverflow = styled(Wrapper)`
+  * {
+    overflow: ${(props) => (props.overflow ? props.overflow : "")};
+  }
+  overflow: ${(props) => (props.overflow ? props.overflow : "")};
+`;
 const App = () => {
+  const isResponsive = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
     <>
-    <Wrapper>
+     <ResponsiveOverflow overflow={isResponsive && "hidden !important"}>
         <Wrapper
              style={{
               position: "fixed",
               bottom: "5%",
               right: "5%",
-              zIndex: 1,
+              zIndex: 10,
             }}
         >
           <a
@@ -51,7 +61,7 @@ const App = () => {
 
           <Footer />
         </Router>
-      </Wrapper>
+        </ResponsiveOverflow>
     </>
   );
 };
