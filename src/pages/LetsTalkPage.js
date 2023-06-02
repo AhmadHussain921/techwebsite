@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutContact from "../components/AboutComponent/AboutContact";
 import ContactUs from "../components/Common/ContactUs";
 import { Wrapper } from "../components/Layouts";
 import { H1, P } from "../components/Typography";
 import ServicesSec from "../components/Common/ServicesSec";
 import lunch from "../assets/lunch.png";
+import { useNavigate } from "react-router-dom";
 const ContactData = [
   {
     title: "FAQS",
@@ -26,10 +27,14 @@ const ContactData = [
   },
 ];
 const LetsTalkPage = () => {
+  const history = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [history]);
   return (
     <>
       <Wrapper bg="black">
-      <Wrapper
+        <Wrapper
           className="container"
           pt="10rem"
           mb="-4rem"

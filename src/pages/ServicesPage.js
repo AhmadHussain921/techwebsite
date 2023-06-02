@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Testimonial from "../components/Common/Testimonial";
 import ServicesSec from "../components/Common/ServicesSec";
 import Hero from "../components/Common/Hero";
@@ -9,6 +9,7 @@ import datasci from "../assets/datasci.png";
 import devops from "../assets/devops.png";
 import iot from "../assets/iot.png";
 import ecommerce from "../assets/ecommerce.png";
+import { useNavigate } from "react-router-dom";
 const ServiceCardsData = [
   {
     src: blockchain,
@@ -42,6 +43,10 @@ const ServiceCardsData = [
   },
 ];
 const ServicesPage = () => {
+  const history = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [history]);
   return (
     <>
       <Hero

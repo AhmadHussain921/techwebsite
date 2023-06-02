@@ -14,7 +14,7 @@ const HeroSection = () => {
         <Wrapper height="90vh" className="container d-flex align-items-center">
           <Wrapper className="pt-5">
             <Wrapper
-               fontFamily="Arial, sans-serif"
+              fontFamily="Arial, sans-serif"
               className="mb-0 mt-0"
               color="white"
               ls="3px"
@@ -24,7 +24,6 @@ const HeroSection = () => {
               We Build
             </Wrapper>
             <Wrapper
-             fontFamily="Urbanist, sans-serif"
               color="white"
               weight="700"
               size={isResponsive ? "30px" : "51px"}
@@ -50,18 +49,17 @@ const HeroSection = () => {
             <Wrapper
               ml={isResponsive && "1rem"}
               className="services-hero"
-            //  fontFamily={"'Gilroy-Bold', sans-serif"}
+              //  fontFamily={"'Gilroy-Bold', sans-serif"}
               weight="600"
               color="#16A092"
               size="18px"
               lHeight="27px"
-              fontFamily="Urbanist, sans-serif"
             >
               <div data-aos="fade-up-right">
-              Blockchain&nbsp; &nbsp;|&nbsp;&nbsp;Artificial intilligence&nbsp;&nbsp;|&nbsp;&nbsp;Data
-              Science&nbsp;&nbsp;|&nbsp;&nbsp;Ecommerce&nbsp;&nbsp;|&nbsp;&nbsp;DevOps
+                Blockchain&nbsp; &nbsp;|&nbsp;&nbsp;Artificial
+                intilligence&nbsp;&nbsp;|&nbsp;&nbsp;Data
+                Science&nbsp;&nbsp;|&nbsp;&nbsp;Ecommerce&nbsp;&nbsp;|&nbsp;&nbsp;DevOps
               </div>
-              
             </Wrapper>
           </Wrapper>
         </Wrapper>

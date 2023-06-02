@@ -1,5 +1,5 @@
 import React from "react";
-import tech from "../../assets/tech.png";
+import tech from "../../assets/techilab.png";
 import { Wrapper, SpanWrapper, Row, Col } from "../Layouts";
 import { H3, H4, P } from "../Typography";
 import styled from "styled-components";

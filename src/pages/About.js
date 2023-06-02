@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../components/Common/Hero";
 import AboutSer from "../components/AboutComponent/AboutSer";
 import History from "../components/AboutComponent/History";
 import AboutTes from "../components/AboutComponent/AboutTes";
 import AboutContact from "../components/AboutComponent/AboutContact";
+import { useNavigate } from "react-router-dom";
 const About = () => {
+  const history = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [history]);
+
   return (
     <>
       <Hero

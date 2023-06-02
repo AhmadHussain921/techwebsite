@@ -29,7 +29,7 @@ const ServicesSec = (props) => {
                 width="100%"
                 className="d-flex flex-column flex-wrap justify-content-center pb-5"
               >
-                  <H2
+                <H2
                   size="45px"
                   ls="3vpx"
                   weight="600"
@@ -40,7 +40,7 @@ const ServicesSec = (props) => {
                   What we do ?
                 </H2>
                 <div className="what d-flex justify-content-center mt-2">
-                <P
+                  <P
                     size="18px"
                     color="#bfcdd5"
                     className=" w-75 text-center"
@@ -48,7 +48,7 @@ const ServicesSec = (props) => {
                   >
                     We collaborate closely with clients, combining industry best
                     practices and advanced technologies to deliver exceptional,
-                    scalable, and cost-effective results. 
+                    scalable, and cost-effective results.
                   </P>
                 </div>
               </Wrapper>
@@ -101,15 +101,15 @@ const ServicesSec = (props) => {
                             {val.title}
                           </H2>
                           <P
-                           style={{
-                            textJustify: "distribute-all-lines",
-                            hyphens: "auto",
-                            textAlign: "justify",
-                          }}
-                            className="mt-4"
+                            style={{
+                              textJustify: "distribute-all-lines",
+                              hyphens: "auto",
+                              textAlign: "justify",
+                            }}
+                            className="mt-4 text-center"
                             color="#bfcdd5"
                             weight="600"
-                            size="12px"
+                            size="14px"
                             lHeight="1.6"
                             ls="0.03em"
                           >
@@ -153,16 +153,16 @@ const ServicesSec = (props) => {
                             {val.title}
                           </H3>
                           <P
-                               className="text-center"
-                               style={{
-                                 textJustify: "distribute-all-lines",
-                                 hyphens: "auto",
-                                 textAlign: "justify",
-                               }}
-                              color="#bfcdd5"
-                              size="16px"
-                              lHeight="24px"
-                              ls="1px"
+                            className="text-center"
+                            style={{
+                              textJustify: "distribute-all-lines",
+                              hyphens: "auto",
+                              textAlign: "justify",
+                            }}
+                            color="#bfcdd5"
+                            size="16px"
+                            lHeight="24px"
+                            ls="1px"
                           >
                             {val.desc}
                           </P>

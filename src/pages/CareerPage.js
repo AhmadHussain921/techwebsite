@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CareerOpenings from "../components/careerComponents/CareerOpenings";
 import Hero from "../components/Common/Hero";
 import { Wrapper } from "../components/Layouts";
@@ -8,6 +8,7 @@ import riding from "../assets/riding.png";
 import lunch from "../assets/lunch.png";
 import emoji from "../assets/emoji.png";
 import flexibility from "../assets/flexibility.png";
+import { useNavigate } from "react-router-dom";
 const IndustriesCareerData = [
   {
     src: health,
@@ -39,6 +40,10 @@ const IndustriesCareerData = [
   },
 ];
 const CareerPage = () => {
+  const history = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [history]);
   return (
     <>
       <Hero
@@ -50,12 +55,13 @@ const CareerPage = () => {
         page="about"
       />
       <Wrapper bg="#000">
-      <div className="container py-5" data-aos="fade-down">
+        <div className="container py-5" data-aos="fade-down">
           <div className="text-center text-white fs-1 text-capitalize fw-bold pt-5">
             Lets explore our capabilities together
           </div>
           <Wrapper color="#16a092" className="text-center pt-3">
-          Quality is at the core of everything we do, ensuring robust and reliable software solutions.
+            Quality is at the core of everything we do, ensuring robust and
+            reliable software solutions.
           </Wrapper>
         </div>
         <Wrapper

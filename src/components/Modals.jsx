@@ -1,62 +1,68 @@
-import Modal from "react-bootstrap/Modal";
 import { Wrapper } from "./Layouts";
-import close from "../assets/close.svg";
 import { PrimaryBtn } from "./Buttons";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import { useMediaQuery } from "./Layouts";
 const ModalComp = (props) => {
+  const isResponsive = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: `${isResponsive ? "90%" : "60%"}`,
+    bgcolor: "black",
+    color: "white",
+    borderRadius: "15px",
+    outline: "none",
+    border: "1px solid #16a092",
+    p: 4,
+  };
   return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Wrapper bg="#000" color="white">
-        <Modal.Header className="d-flex flex-row justify-content-between align-items-center">
-          <Modal.Title id="contained-modal-title-vcenter">
-            <Wrapper weight="700" size="31px">
-              {props.heading}
+    <>
+      <Modal
+        open={props.open}
+        onClose={props.handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Wrapper className="d-flex flex-row justify-content-center align-items-center">
+            <Wrapper>
+              <Wrapper weight="700" size="31px">
+                {props.heading}
+              </Wrapper>
             </Wrapper>
-          </Modal.Title>
-          <Wrapper
-            style={{ cursor: "pointer" }}
-            onClick={() => {
-              props.setOpen(false);
-            }}
-          >
-            <img
-              width="25px"
-              height="25px"
-              src={close}
-              alt="close"
-              style={{ filter: "brightness(0) invert(1)" }}
-            />
           </Wrapper>
-        </Modal.Header>
-        <Modal.Body>
+
           <Wrapper>{props.children}</Wrapper>
-        </Modal.Body>
-        <Modal.Footer>
-          <PrimaryBtn
-            data-aos="zoom-in"
-            hoverBg="transparent"
-            // hoverTransform="scale(1.1)"
-            bg="#16a092"
-            className="btn btn-simision text-white ps-4 pt-1 pb-1 pe-4 fw-bold"
-            style={{ border: "1px solid #16a092", fontSize: "21px" }}
-          >
-            Submit
-          </PrimaryBtn>
-          <PrimaryBtn
-            onClick={() => {
-              props.setOpen(false);
-            }}
-            className="rounded btn text-white fs-5 fw-bold"
-          >
-            Close
-          </PrimaryBtn>
-        </Modal.Footer>
-      </Wrapper>
-    </Modal>
+
+          <Wrapper className="d-flex flex-row align-items-center justify-content-center gap-3">
+            <PrimaryBtn
+              data-aos="zoom-in"
+              hoverBg="transparent"
+              onClick={props.submitHandler}
+              bg="#16a092"
+              className="btn btn-simision text-white ps-3 pe-3 fw-bold"
+              style={{ border: "1px solid #16a092", fontSize: "21px" }}
+            >
+              Submit
+            </PrimaryBtn>
+            <PrimaryBtn
+              onClick={() => {
+                props.setOpen(false);
+              }}
+              // style={{ border: "none" }}
+              className="rounded btn text-white ps-2 pe-2 fs-5 fw-bold"
+            >
+              Close
+            </PrimaryBtn>
+          </Wrapper>
+        </Box>
+      </Modal>
+    </>
   );
 };
 export default ModalComp;

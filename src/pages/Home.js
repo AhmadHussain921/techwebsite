@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Details from "../components/Common/Details";
 import HeroSection from "../components/HomeComponents/HeroSection";
 import ServicesSec from "../components/Common/ServicesSec";
@@ -20,7 +20,7 @@ import hospital from "../assets/hospital.png";
 import binance from "../assets/binance.png";
 import { Wrapper } from "../components/Layouts";
 import { H2 } from "../components/Typography";
-
+import { useNavigate } from "react-router-dom";
 const IndustryData = [
   { src: banking, title: "Banking" },
 
@@ -70,6 +70,10 @@ const ServiceCardsData = [
 ];
 
 const Home = () => {
+  const history = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [history]);
   return (
     <>
       <HeroSection />
@@ -78,7 +82,7 @@ const Home = () => {
       <DeliveredSec />
       <HugeSec />
       <Wrapper bg="black">
-      <Wrapper className="container" data-aos="fade-down">
+        <Wrapper className="container" data-aos="fade-down">
           <Wrapper
             color="#16a092"
             ls="1px"

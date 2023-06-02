@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import tech from "../../assets/tech.png";
+import tech from "../../assets/techilab.png";
 import { useMediaQuery, Wrapper } from "../Layouts";
 import { HeaderBtn } from "../Buttons";
 import styled from "styled-components";
@@ -11,14 +11,18 @@ const HeaderStyle = styled.div`
   * {
     overflow: hidden;
   }
-  overflow: hidden;
   font-family: Tinos, serif;
+  overflow: hidden;
   width: 100%;
   height: 90px;
   padding: 0 1.5rem;
   transition: 0.3s ease all;
   padding: ${(props) => (props.p ? props.p : "")};
   background: ${(props) => (props.bg ? props.bg : "")};
+  a {
+    color: ${(props) => (props.color ? props.color + " !important" : "white")};
+    transition: 0.5s ease !important;
+  }
 `;
 
 const HeaderContentStyle = styled.div`
@@ -54,17 +58,15 @@ const HeaderContentNavStyle = styled.div`
 `;
 const UL = styled.ul`
   list-style: none;
-  padding: 0px;
   display: flex;
   flex-direction: column;
   margin-bottom: ${(props) => (props.mb ? props.mb : "")};
   margin-right: ${(props) => (props.mr ? props.mr : "")};
+
   .navbar-scrolled {
     background-color: rgb(255, 255, 255);
-
     transition: 0.5s ease;
   }
-
   .navbar-a {
     font-size: 16px;
     color: rgb(255, 255, 255);
@@ -75,13 +77,6 @@ const UL = styled.ul`
     border-radius: 12px;
     &:hover {
       background: rgba(255, 255, 255, 0.1);
-    }
-  }
-
-  .navbar-a-scrolled {
-    color: black;
-    &:hover {
-      background: rgba(0, 0, 0, 0.1);
     }
   }
 `;
@@ -101,6 +96,7 @@ function Header() {
   `;
   const [menuOpen, setMenuOpen] = useState(false);
   const [color, setColor] = useState(false);
+  const [hover, setHover] = useState(false);
 
   const [size, setSize] = useState({
     width: 0,
@@ -137,13 +133,18 @@ function Header() {
   const menuToggleHandler = () => {
     setMenuOpen((menuOpen) => !menuOpen);
   };
-
   return (
     <HeaderStyle
-      // style={{ overflow: breakPoint && "hidden !important" }}
+      onPointerEnter={() => {
+        setHover(true);
+      }}
+      onPointerLeave={() => {
+        setHover(false);
+      }}
       p={breakPoint ? "0 3rem" : "0 1.5rem"}
-      bg={color && "white"}
-      transition={color ? "0.5s ease" : "0.3s ease transform;"}
+      bg={(color || hover) && "white"}
+      color={(color || hover) && "black"}
+      transition={color || hover ? "0.5s ease" : "0.3s ease transform;"}
       className="fixed-top"
     >
       <Wrapper className="container pt-2 mt-1">
@@ -167,7 +168,7 @@ function Header() {
             width={breakPoint ? "auto" : "100%"}
             height={breakPoint ? "auto" : "100vh"}
             position={breakPoint ? "static" : "fixed"}
-            color={menuOpen && size.width < 768 && "black"}
+            color={(menuOpen && size.width) < 768 && "black"}
             bg={breakPoint ? "transparent" : "rgba(105, 102, 102, 0.9)"}
             className={`${
               breakPoint
@@ -178,11 +179,11 @@ function Header() {
             <UL
               mb={breakPoint ? "0px" : "32px"}
               mr={breakPoint && "calc(0.5rem + 16px)"}
-              className={
+              className={`${
                 breakPoint
                   ? "d-flex flex-row align-items-center"
                   : "d-flex flex-column"
-              }
+              }`}
               onClick={() => setMenuOpen(false)}
             >
               <LI>
@@ -202,7 +203,7 @@ function Header() {
                   to="/about"
                   className={
                     color
-                      ? "navbar-a  text-uppercase navbar-a-scrolled "
+                      ? "navbar-a text-uppercase navbar-a-scrolled "
                       : "navbar-a text-uppercase "
                   }
                 >
@@ -236,7 +237,7 @@ function Header() {
               </LI>
 
               <Link to="/contact">
-                <HeaderBtn scrollBtn={color ? true : false}>
+                <HeaderBtn scrollBtn={color || hover ? true : false}>
                   Let's Talk
                 </HeaderBtn>
               </Link>

@@ -2,7 +2,7 @@ import React from "react";
 import imgdetails from "../../assets/imgdetails.png";
 import { Wrapper, Row, Col, SpanWrapper, useMediaQuery } from "../Layouts";
 import { PrimaryBtn } from "../Buttons";
-import { H1, P } from "../Typography";
+import { H1 } from "../Typography";
 const Details = (props) => {
   const isResponsive = useMediaQuery({
     query: "(max-width: 768px)",
@@ -11,18 +11,31 @@ const Details = (props) => {
     <Wrapper style={{ background: "#000" }} width="100%">
       <Wrapper pt="5rem" className="container">
         <Row className="align-items-center">
-          <Col md={6} >
-            <H1
-               size="45px"
-               // weight="100"
-               // ls="5px"
-              className={`text-white ${isResponsive && "text-center"}`}
-            >
-              {props.title}
-            </H1>
+          <Col md={6}>
+            {props.page === "home" && (
+              <>
+                {" "}
+                <H1
+                  size="45px"
+                  className={`text-white ${isResponsive && "text-center"}`}
+                >
+                  {props.title}
+                </H1>
+              </>
+            )}
+            {props.page === "services" && (
+              <>
+                {" "}
+                <H1
+                  size="48px"
+                  className={`text-white ${isResponsive && "text-center"}`}
+                >
+                  {props.title}
+                </H1>
+              </>
+            )}
             <Wrapper
               size="32px"
-               // pt="5px"
               color="#16a092"
               weight="600"
               className={isResponsive && "text-center"}
@@ -36,18 +49,18 @@ const Details = (props) => {
               )}
               {props.page === "services" && (
                 <>
-                  <span className="fw-bold">
+                  <SpanWrapper size="19px" className="fw-bold">
                     Web applications , cross-platform applications ,
                     Decentralized Applications (DApps) , Artificial Intelligence
                     (AI) and Machine Learning (ML) Solutions , and more. &nbsp;
                     &nbsp;|&nbsp;&nbsp; Since 2017
-                  </span>
+                  </SpanWrapper>
                 </>
               )}
             </Wrapper>
             {props.page === "home" && (
               <Wrapper
-              size="18px"
+                size="18px"
                 color="#bfcdd5"
                 pt="10px"
                 lh="1.5rem"
@@ -58,7 +71,6 @@ const Details = (props) => {
                 }}
                 width="90%"
                 weight="300"
-                // fontFamily="Tinos, serif"
               >
                 Empowering businesses with transformative software solutions and
                 driving growth. Our agile teams, custom software, blockchain
@@ -77,7 +89,7 @@ const Details = (props) => {
                   color="#bfcdd5"
                   fontFamily="Tinos, serif"
                   lHeight="35px"
-                  size="16px"
+                  size="18px"
                   className={`mt-4 ${isResponsive && "ms-4"}`}
                 >
                   <li>Drive innovation and stay ahead in your industry. </li>
@@ -102,14 +114,14 @@ const Details = (props) => {
             )}
 
             <PrimaryBtn
-               pt="7px"
-               pb="7px"
+              pt="7px"
+              pb="7px"
               className={`btn ${
                 isResponsive &&
                 "d-flex flex-row w-100 justify-content-center mb-5"
               }`}
             >
-                <a href="#About" className="text-white text-decoration-none px-4">
+              <a href="#About" className="text-white text-decoration-none px-4">
                 {props.btnName}
               </a>
             </PrimaryBtn>
@@ -120,7 +132,7 @@ const Details = (props) => {
                 mt={isResponsive ? "2rem" : "5rem"}
                 className="d-flex justify-content-end"
               >
-                <img src={imgdetails} alt="Image for tech" className="w-100 " />
+                <img src={imgdetails} alt="tech" className="w-100 " />
               </Wrapper>
             )}
             {props.page === "services" && (
@@ -129,13 +141,18 @@ const Details = (props) => {
                 className="w-100 p-5 h-100 d-flex justify-content-center align-items-center"
               >
                 <div>
-                  <h1 className="text-center display-5 fw-bold text-white">
+                  <H1
+                    size="48px"
+                    className="text-center display-5 fw-bold text-white"
+                  >
                     GROW YOUR BUSSINESS
-                  </h1>
+                  </H1>
 
                   <Wrapper
-                    fontFamily="Tinos, serif"
-                    className="text-center text-white"
+                    size="18px"
+                    weight="500"
+                    lHeight="31px"
+                    className="text-center text-white mb-3 mt-3"
                     style={{
                       textJustify: "distribute-all-lines",
                       hyphens: "auto",
