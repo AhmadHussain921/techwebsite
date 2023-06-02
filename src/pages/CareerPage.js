@@ -48,7 +48,7 @@ const CareerPage = () => {
     <>
       <Hero
         bg="https://www.key.com/content/dam/kco/images/businesses-institutions/industry-expertise/advisor_homepage_cropped.jpg"
-        title="Career At tech"
+        title="Career At Techilab"
         extra=""
         desc="Discover endless possibilities for growth and learning in the ever-evolving world of software development at Techilab."
         contact={false}

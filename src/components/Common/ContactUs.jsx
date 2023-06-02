@@ -85,7 +85,7 @@ const ContactUs = () => {
               color="#16a092"
             >
               i am available for freelancer work connect with me via phone
-              :032219903230 or email: info@tech.com
+              :03214100432 or email: info@techilab.com
             </P>
             <form className="position-relative mt-2" action="">
             <InputStyle

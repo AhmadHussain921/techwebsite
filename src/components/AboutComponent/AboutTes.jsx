@@ -249,7 +249,7 @@ const AboutTes = () => {
                   data-ride="carousel"
                 > <div  data-aos="fade-down">
                   <h1 className="text-white text-capitalize fs-1" >
-                    Whats Going At tech ?{" "}
+                    Whats Going At Techilab ?{" "}
                   </h1>
                   </div>
                   <div className="points">

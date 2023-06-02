@@ -255,7 +255,7 @@ const Footer = () => {
                       Techilab empowers businesses with custom software
                       solutions, agile teams, blockchain solutions, and
                       E-Commerce websites. Our skilled professionals and
-                      cutting-edge tech deliver exceptional results for your
+                      cutting-edge technology deliver exceptional results for your
                       success and growth. Let's transform your ideas into
                       reality and embark on a digital transformation journey
                       together.{" "}
@@ -345,7 +345,7 @@ const Footer = () => {
                   <P m="0px" size="14px" color="#fff">
                     Copyright &copy; 2023, All Right Reserved{" "}
                     <a style={{ color: "#16a092" }} href="#a">
-                      tech
+                      Techilab
                     </a>
                   </P>
                 </div>
