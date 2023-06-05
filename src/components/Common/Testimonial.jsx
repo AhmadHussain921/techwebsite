@@ -2,7 +2,7 @@ import React from "react";
 import karl from "../../assets/karl.png";
 import devid from "../../assets/devin.jpg";
 import styled from "styled-components";
-import { Wrapper, SpanWrapper } from "../Layouts";
+import { Wrapper, SpanWrapper, useMediaQuery } from "../Layouts";
 import { P, H2 } from "../Typography";
 const TestimonialSection = styled.section`
   display: grid;
@@ -31,6 +31,9 @@ const TestimonialData = [
   },
 ];
 const Testimonial = () => {
+  const isResponsive = useMediaQuery({
+    query: "(max-width: 753px)",
+  });
   return (
     <>
       <TestimonialSection>
@@ -87,7 +90,12 @@ const Testimonial = () => {
                                 </Wrapper>
                               </Wrapper>
                             </div>
-                            <div className="col-md-6">
+                            <Wrapper
+                              width={isResponsive && "100%"}
+                              className={`col-md-6 ${
+                                isResponsive && "text-center"
+                              }`}
+                            >
                               <Wrapper size="18px" className="content">
                                 <P
                                   className="text-justify"
@@ -106,7 +114,7 @@ const Testimonial = () => {
                                   {val.desc}
                                 </P>
                               </Wrapper>
-                            </div>
+                            </Wrapper>
                           </Wrapper>
                         </Wrapper>
                       </div>
@@ -115,7 +123,7 @@ const Testimonial = () => {
                 })}
               </div>
               <button
-                className="carousel-control-prev"
+                className={`carousel-control-prev`}
                 style={{ width: "40px" }}
                 type="button"
                 data-bs-target="#carouselExampleControls"
@@ -128,7 +136,7 @@ const Testimonial = () => {
                 <span className="visually-hidden">Previous</span>
               </button>
               <button
-                className="carousel-control-next"
+                  className={`carousel-control-next`}
                 style={{ width: "40px" }}
                 type="button"
                 data-bs-target="#carouselExampleControls"

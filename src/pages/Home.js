@@ -77,7 +77,7 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-      <Details title="tech" page="home" btnName="Initiate Consultation" />
+      <Details title="Techilab" page="home" btnName="Initiate Consultation" />
       <ServicesSec data={ServiceCardsData} heading={true} page="home" />
       <DeliveredSec />
       <HugeSec />

@@ -29,11 +29,11 @@ const LogosData = [
   },
   {
     src: lock,
-    title: "10+  Successful Projects",
+    title: "100+  Successful Projects",
   },
   {
     src: bag,
-    title: "30+ Developer",
+    title: "90+ Developer",
   },
 ];
 const DeliveredSec = () => {

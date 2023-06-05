@@ -43,8 +43,7 @@ const Details = (props) => {
               {props.page === "home" && (
                 <>
                   {" "}
-                  Revolutionize your brand's presence - By{" "}
-                  <SpanWrapper weight="600">tech</SpanWrapper>
+                  Revolutionize your brand's presence
                 </>
               )}
               {props.page === "services" && (
@@ -64,12 +63,13 @@ const Details = (props) => {
                 color="#bfcdd5"
                 pt="10px"
                 lh="1.5rem"
+                className={`${isResponsive && "text-center"}`}
                 style={{
                   textJustify: "distribute-all-lines",
                   hyphens: "auto",
                   textAlign: "justify",
                 }}
-                width="90%"
+                width={isResponsive ? "100%" : "90%"}
                 weight="300"
               >
                 Empowering businesses with transformative software solutions and
@@ -89,7 +89,7 @@ const Details = (props) => {
                   color="#bfcdd5"
                   fontFamily="Tinos, serif"
                   lHeight="35px"
-                  size="18px"
+                  size={isResponsive ? "16px" : "18px"}
                   className={`mt-4 ${isResponsive && "ms-4"}`}
                 >
                   <li>Drive innovation and stay ahead in your industry. </li>

@@ -250,7 +250,10 @@ function Header() {
             style={{ position: "relative", cursor: "pointer" }}
           >
             {!menuOpen ? (
-              <BiMenuAltRight onClick={menuToggleHandler} />
+             <BiMenuAltRight
+             style={{ color: hover || (color && "black") }}
+             onClick={menuToggleHandler}
+           />
             ) : (
               <AiOutlineClose onClick={menuToggleHandler} />
             )}

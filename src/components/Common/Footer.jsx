@@ -1,6 +1,6 @@
 import React from "react";
 import tech from "../../assets/techilab.png";
-import { Wrapper, SpanWrapper, Row, Col } from "../Layouts";
+import { Wrapper, SpanWrapper, Row, Col, useMediaQuery } from "../Layouts";
 import { H3, H4, P } from "../Typography";
 import styled from "styled-components";
 const UL = styled.ul``;
@@ -182,21 +182,20 @@ const LinksData = [
 ];
 const FooterMenuData = ["Home  ", "Terms", "Privacy", "Policy", "Contact"];
 const Footer = () => {
+  const isResponsive = useMediaQuery({
+    query: "(max-width: 753px)",
+  });
   return (
     <>
       <Wrapper bg="#000000" className="position-relative">
         <Wrapper className="container">
-          <Wrapper borderBottom="1px solid #373636" pb="8px" className="pt-5 ">
-            <div className="row">
+        <Wrapper borderBottom="1px solid #373636" pb="20px" className="pt-5">
+            <div className="row pt-1">
               {ContactData.map((val, index) => {
                 return (
                   <>
-                    <div
-                      key={index}
-                      className="col-xl-4 col-md-4 mb-30"
-                     
-                    >
-                      <Wrapper>
+                     <div key={index} className={`col-xl-4 col-md-4 mb-3`}>
+                      <Wrapper mt={isResponsive && "1rem"}>
                         <i
                           style={{
                             color: "#16a092",
@@ -209,14 +208,18 @@ const Footer = () => {
                         <Wrapper pl="15px" className="d-inline-block">
                           <H4
                             color="#fff"
-                            size="20px"
+                            size={isResponsive ? "16px" : "20px"}
                             weight="700"
                             mb="2px"
                             ls="3px"
                           >
                             {val.title}
                           </H4>
-                          <SpanWrapper color="#dfe4ed" size="15px" ls="1px">
+                          <SpanWrapper
+                            color="#dfe4ed"
+                            size={isResponsive ? "14px" : "15px"}
+                            ls="1px"
+                          >
                             {val.desc}
                           </SpanWrapper>
                         </Wrapper>
@@ -229,21 +232,27 @@ const Footer = () => {
           </Wrapper>
           <Wrapper
             style={{ zIndex: 2 }}
-            className="footer-content position-relative pt-5 pb-1"
+            className={`footer-content position-relative ${
+              !isResponsive && "pt-5"
+            } pb-1`}
           >
             <Row>
               <Col xl={4} lg={4} className="mb-2">
                 <div className="footer-widget">
-                  <div className="footer-logo">
-                    <a href="index.html">
-                      <img
-                        src={tech}
-                        className="img-fluid"
-                        alt="logo"
-                        style={{ maxWidth: "120px" }}
-                      />
-                    </a>
-                  </div>
+                {!isResponsive && (
+                    <>
+                      <div className="footer-logo">
+                        <a href="index.html">
+                          <img
+                            src={tech}
+                            className="img-fluid"
+                            alt="logo"
+                            style={{ maxWidth: "120px" }}
+                          />
+                        </a>
+                      </div>
+                    </>
+                  )}
                   <div className="footer-text">
                     <P
                       mb="54px"
@@ -267,7 +276,8 @@ const Footer = () => {
                       {FooterSocialIcons.map((val, index) => {
                         return (
                           <>
-                            <SocialLi key={index} data-aos="flip-left">
+                            {/* <SocialLi key={index} data-aos="flip-left"> */}
+                            <SocialLi key={index} >
                               <SocialA href="#" style={{}}>
                                 <SocialI className={val}></SocialI>
                               </SocialA>
@@ -290,7 +300,7 @@ const Footer = () => {
                     {LinksData.map((val, index) => {
                       return (
                         <>
-                          <LI key={index} >
+                          <LI key={index}>
                             <a href="#a">{val}</a>
                           </LI>
                         </>
@@ -319,7 +329,8 @@ const Footer = () => {
                     </P>
                   </div>
                   <div className="subscribe-form position-relative overflow-hidden">
-                    <form action="#" data-aos="fade-up">
+                  {/* <form action="#" data-aos="fade-up"> */}
+                    <form action="#">
                       <EmailInput type="text" placeholder="Email Address" />
                       <SubmitBtn>
                         <i

@@ -30,10 +30,11 @@ const HeroSection = () => {
               pl={isResponsive && "1rem"}
               transition={isResponsive && "0.6s ease-in-out"}
             >
+              Agile software teams
               {/* Style will be inherited from the parent element */}
-              <Typewriter
+              {/* <Typewriter
                 words={[
-                  "Agile teams",
+                  "Agile software teams",
                   "Blockchain Applications",
                   "E-Commerce Applications",
                   "Custom FullStack Software Solutions",
@@ -44,7 +45,7 @@ const HeroSection = () => {
                 typeSpeed={90}
                 deleteSpeed={1}
                 delaySpeed={1500}
-              />
+              /> */}
             </Wrapper>
             <Wrapper
               ml={isResponsive && "1rem"}
@@ -55,7 +56,8 @@ const HeroSection = () => {
               size="18px"
               lHeight="27px"
             >
-              <div data-aos="fade-up-right">
+             {/* <div data-aos="fade-up-right"> */}
+             <div> 
                 Blockchain&nbsp; &nbsp;|&nbsp;&nbsp;Artificial
                 intilligence&nbsp;&nbsp;|&nbsp;&nbsp;Data
                 Science&nbsp;&nbsp;|&nbsp;&nbsp;Ecommerce&nbsp;&nbsp;|&nbsp;&nbsp;DevOps

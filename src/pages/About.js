@@ -15,15 +15,15 @@ const About = () => {
     <>
       <Hero
         bg="https://www.capgemini.com/de-de/wp-content/uploads/sites/8/2022/08/GettyImages-1181008199.jpg"
-        extra="tech"
-        title="About us"
+        extra="Techilab"
+        title="ABOUT US"
         desc=" Proudly serving the world’s top asset finance and leasing
               companies with smart software technology for over four decades."
         contact={true}
       />
       <AboutSer />
       <History />
-      <AboutTes />
+      {/* <AboutTes /> */}
       <AboutContact />
     </>
   );
