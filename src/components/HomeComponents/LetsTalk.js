@@ -5,7 +5,7 @@ import { PrimaryBtn } from "../Buttons";
 const LetsTalk = () => {
   return (
     <Wrapper bg="#000">
-      <Wrapper pt="5rem" pb="5rem" className="container">
+      <Wrapper pt="5rem" className="container">
         <Wrapper
           color="#16a092"
           weight="bold"

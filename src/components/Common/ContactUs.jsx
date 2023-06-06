@@ -54,7 +54,6 @@ const ContactUs = () => {
   return (
     <>
       <ContactSection bg="#000">
-
         <ContactFormStyle
           p={isResponsiveHighest ? "0px 3%" : "0px 15%"}
           transition={
@@ -84,11 +83,11 @@ const ContactUs = () => {
               size={isResponsiveNormal ? "12px" : "16px"}
               color="#16a092"
             >
-              i am available for freelancer work connect with me via phone
-              :03214100432 or email: info@techilab.com
+              Get in touch with Techilab and unlock the power of innovative
+              software solutions tailored to your business needs
             </P>
             <form className="position-relative mt-2" action="">
-            <InputStyle type="" placeholder="Your Name" required />
+              <InputStyle type="" placeholder="Your Name" required />
               <InputStyle type="" placeholder="Your Email" required />
               <InputStyle type="" placeholder="write a subject" required />
               <TextAreaStyle
@@ -114,7 +113,7 @@ const ContactUs = () => {
           </Wrapper>
           <Wrapper>
             <img
-            // data-aos="fade-up-left"
+              // data-aos="fade-up-left"
               style={{
                 maxWidth: "100%",
                 borderRadius: "10px",
