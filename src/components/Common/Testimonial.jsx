@@ -2,8 +2,9 @@ import React from "react";
 import karl from "../../assets/karl.png";
 import devid from "../../assets/devin.jpg";
 import styled from "styled-components";
+import { PrimaryBtn } from "../Buttons";
 import { Wrapper, SpanWrapper, useMediaQuery } from "../Layouts";
-import { P, H2 } from "../Typography";
+import { P,H1, H2 } from "../Typography";
 const TestimonialSection = styled.section`
   display: grid;
   place-items: center;
@@ -38,18 +39,53 @@ const Testimonial = () => {
     <>
       <TestimonialSection>
         <div className="container">
+          <Wrapper className="container">
+        <H1
+         size="45px"
+          data-aos="fade-down"
+          className={`text-white pt-5 display-4 fw-bold ${
+            isResponsive && "text-center"
+          }`}
+        >
+          Let's Tell Huge Stories Together
+        </H1>
+        <Wrapper
+          className="d-flex justify-content-center"
+          data-aos="fade-down"
+        >
           <Wrapper
-            position="relative"
-            mt="50px"
-            mb="20px"
-            weight="700"
-            ls="3px"
-            size="32px"
-            color="white"
-            className="fs-1 text-center section-header"
+              width={isResponsive ? "470px" : "600px"}
+              size={"18px"}
+            color="#FFF"
+            className={`pt-4 ${isResponsive && "text-center"}`}
           >
-            Client Review
+            Our team is wired up to deliver fully customized software solutions,
+            fueled by passion, expertise, and creativity. Let's turn your vision
+            into reality with our unwavering commitment to excellence and
+            customer satisfaction.
           </Wrapper>
+        </Wrapper>
+        <PrimaryBtn
+         data-aos="zoom-in"
+         pl="30px"
+         pr="30px"
+         pt="7px"
+         pb="7px"
+          width={isResponsive && "100%"}
+          className={`btn mt-4 ${
+            isResponsive &&
+            "d-flex flex-row align-items-center justify-content-center"
+          }`}
+        >
+          <a
+            href="#Start"
+            className="text-white text-decoration-none"
+            style={{ fontWeight: 600 }}
+          >
+            Explore Opportunities
+          </a>
+        </PrimaryBtn>
+      </Wrapper>
           <div className="testimonials">
             <div
               id="carouselExampleControls"
@@ -77,7 +113,7 @@ const Testimonial = () => {
                                     height="200px"
                                     style={{
                                       borderRadius: "50%",
-                                      border: "7px solid #16a092",
+                                      border: "3px solid #16a092",
                                     }}
                                     src={val.src}
                                     alt=""

@@ -80,7 +80,8 @@ const Home = () => {
       <Details title="Techilab" page="home" btnName="Initiate Consultation" />
       <ServicesSec data={ServiceCardsData} heading={true} page="home" />
       <DeliveredSec />
-      <HugeSec />
+      {/* <HugeSec /> */}
+      <Testimonial />
       <Wrapper bg="black">
         <Wrapper className="container" data-aos="fade-down">
           <Wrapper
@@ -99,7 +100,7 @@ const Home = () => {
         </Wrapper>
         <IndustriesCard data={IndustryData} />
       </Wrapper>
-      <Testimonial />
+
       <LetsTalk />
       <ContactUs />
     </>
