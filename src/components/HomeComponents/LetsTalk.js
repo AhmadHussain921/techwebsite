@@ -15,7 +15,7 @@ const LetsTalk = () => {
         >
           Want to higher a dedicated developer ?
         </Wrapper>
-        <div className="d-flex justify-content-center " data-aos="zoom-in">
+        <div className="d-flex justify-content-center " >
           <PrimaryBtn 
             className="text-white py-2 px-4 rounded btn"
             style={{ fontWeight: "600" }}
