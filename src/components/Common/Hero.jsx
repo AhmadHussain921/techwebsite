@@ -20,7 +20,6 @@ const Hero = (props) => {
         <Wrapper height="90vh" className="container d-flex align-items-center">
           <div className={`wrapper ${props.extra !== "" ? "pt-5" : "pt-1"}`}>
             <Wrapper
-              fontFamily="Arial, sans-serif"
               color="white"
               size="25px"
               ls="3px"
@@ -57,6 +56,7 @@ const Hero = (props) => {
                   data-aos="zoom-in"
                   bg={isResponsive ? "#16a092" : "transparent"}
                   className="fs-5 rounded text-white mt-4"
+                 
                 >
                   Get in touch
                 </PrimaryBtn>

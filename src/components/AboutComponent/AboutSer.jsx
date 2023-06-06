@@ -40,7 +40,7 @@ const AboutSer = () => {
   return (
     <>
       <Wrapper bg="#000">
-        <div className="container pt-5">
+        <div className="container pt-5 ">
           <div className="d-flex justify-content-center">
             <div className="mm" data-aos="fade-down">
               <Wrapper
@@ -66,9 +66,9 @@ const AboutSer = () => {
           </div>
         </div>
       </Wrapper>
-      <Wrapper width="100%" bg="#000" className="d-grid">
+      <Wrapper width="100%" bg="#000" className="d-grid pb-5">
         <Wrapper pt="1rem" className="container row-ser">
-          <Row className=" pt-5">
+          <Row className=" pt-5 ">
             {CardData.map((val, index) => {
               return (
                 <>
