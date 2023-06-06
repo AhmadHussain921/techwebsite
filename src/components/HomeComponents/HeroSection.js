@@ -14,7 +14,7 @@ const HeroSection = () => {
         <Wrapper height="90vh" className="container d-flex align-items-center">
           <Wrapper className="pt-5">
             <Wrapper
-              fontFamily="Arial, sans-serif"
+              
               className="mb-0 mt-0"
               color="white"
               ls="3px"
