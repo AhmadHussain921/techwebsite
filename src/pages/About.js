@@ -3,6 +3,8 @@ import Hero from "../components/Common/Hero";
 import AboutSer from "../components/AboutComponent/AboutSer";
 import History from "../components/AboutComponent/History";
 import AboutTes from "../components/AboutComponent/AboutTes";
+import CoreValues from "../components/AboutComponent/CoreValues";
+import AboutService from "../components/AboutComponent/AboutService";
 import AboutContact from "../components/AboutComponent/AboutContact";
 import { useNavigate } from "react-router-dom";
 const About = () => {
@@ -22,8 +24,11 @@ const About = () => {
         contact={true}
       />
       <AboutSer />
-      <History />
+      
+      <CoreValues />
       {/* <AboutTes /> */}
+      <History />
+      <AboutService />
       <AboutContact />
     </>
   );
