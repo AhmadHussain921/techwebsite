@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper, Container } from "../Layouts";
+import { Wrapper, Container, useMediaQuery } from "../Layouts";
 import services from "../../assets/services.jpg";
 import { H3, P } from "../Typography";
 import people from "../../assets/people.svg";
@@ -29,14 +29,21 @@ const CardData = [
   },
 ];
 const AboutService = () => {
+    const isResponsive = useMediaQuery({
+        query: "(max-width: 768px)",
+      });
   return (
     <>
       <Wrapper bg="#F7F5FB" pt="5%" pb="5%">
         <Container>
-          <Wrapper className="d-flex flex-row align-items-center justify-content-between gap-5">
+        <Wrapper
+            className={`d-flex flex-row align-items-center justify-content-between ${
+              isResponsive && "flex-wrap"
+            } gap-5`}
+          >
             <img
-              width="45%"
-              height="45%"
+                  width={isResponsive ? "100%" : "45%"}
+                  height={isResponsive ? "100%" : "45%"}
               src={services}
               alt="services"
               style={{ borderRadius: "5px" }}
@@ -60,7 +67,11 @@ const AboutService = () => {
             </Wrapper>
           </Wrapper>
           <Wrapper pt={"6%"}>
-            <Wrapper className="d-flex flex-row align-items-center justify-content-start gap-4">
+          <Wrapper
+              className={`d-flex flex-row align-items-center justify-content-start ${
+                isResponsive && "flex-wrap"
+              } gap-4`}
+            >
               {CardData.map((val, index) => {
                 return (
                   <>

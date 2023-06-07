@@ -11,7 +11,6 @@ const HeaderStyle = styled.div`
   * {
     overflow: hidden;
   }
-  font-family: Tinos, serif;
   overflow: hidden;
   width: 100%;
   height: 90px;

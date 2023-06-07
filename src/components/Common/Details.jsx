@@ -87,7 +87,6 @@ const Details = (props) => {
               <>
                 <Wrapper
                   color="#bfcdd5"
-                  fontFamily="Tinos, serif"
                   lHeight="35px"
                   size={isResponsive ? "16px" : "18px"}
                   className={`mt-4 ${isResponsive && "ms-4"}`}
